@@ -5,7 +5,6 @@ export const LANGUAGE_VERSIONS = {
   java: "15.0.2",
   csharp: "6.12.0",
   php: "8.2.3",
-  c: "11.3.0", // Added C++
 };
 
 export const CODE_SNIPPETS = {
@@ -16,5 +15,4 @@ export const CODE_SNIPPETS = {
   csharp:
     'using System;\n\nnamespace HelloWorld\n{\n\tclass Hello { \n\t\tstatic void Main(string[] args) {\n\t\t\tConsole.WriteLine("Hello World in C#");\n\t\t}\n\t}\n}\n',
   php: `<?php\n\n$name = 'Alex';\necho "Hello, " . $name . "!";\n`,
-  cpp: `\n#include <iostream>\n\nint main() {\n\tstd::cout << "Hello, Alex!" << std::endl;\n\treturn 0;\n}\n`, // Added C++
 };
