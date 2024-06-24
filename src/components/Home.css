@@ -1,0 +1,76 @@
+/* Home.css */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+    background: #343a40;
+}
+
+.card {
+    background: #495057;
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    color: #f8f9fa;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.logo {
+    max-width: 150px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.form-control {
+    background-color: #6c757d;
+    border: 1px solid #ced4da;
+    color: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.input-field::placeholder {
+    color: #ced4da;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    border: none;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #218838 0%, #28a745 100%);
+    transform: translateY(-2px);
+}
+
+.create-room {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+
+.create-room:hover {
+    color: #218838;
+}
+
+.join-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
