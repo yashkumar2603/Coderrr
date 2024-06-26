@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+<font color="#f79646">Deployed Link -</font> https://coderrr.vercel.app/
+<font color="#f79646">github Repository link -</font> [Coderrr](https://github.com/yashkumar2603/Coderrr)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Collaborative IDE with Real-Time Code Sync and Execution**
 
-## Available Scripts
+This innovative Integrated Development Environment (IDE) is designed to enhance team productivity by enabling real-time code collaboration and execution. It allows multiple users to simultaneously edit and sync code within a shared workspace, offering seamless integration of essential coding and testing features.
+### Key Features
 
-In the project directory, you can run:
+1. **Real-Time Code Sync:** Multiple users can edit and view code changes in real time, fostering a collaborative environment.
+    
+2. **Integrated Code Running:** Supports code execution and testing for all major programming languages, ensuring quick validation and debugging.
+    
+3. **WebSockets for Synchronization:** Uses WebSockets for efficient real-time data synchronization, providing a smooth collaborative experience.
+    
+4. **Piston API for Code Execution:** Leverages the Piston API to execute code, ensuring fast and reliable results.
+    
+5. **ReactJS Frontend:** Built with ReactJS for a responsive and intuitive user interface.
+    
+6. **User Activity Notifications:** Displays non-intrusive pop-up messages when users join or leave the workspace, keeping team members informed without disruption.
 
-### `npm start`
+### Use Case
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Team Collaboration on Coding Projects**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In modern software development, teamwork and rapid iteration are crucial. This IDE addresses the need for real-time collaboration by allowing developers to work together on the same codebase from different locations. It eliminates the friction of manual code merging and synchronizing, enabling immediate sharing of ideas and solutions.
 
-### `npm test`
+**Typical Scenario:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Distributed Development Teams:** Remote teams can collaborate in real-time on coding tasks, enhancing communication and productivity.
+    
+- **Pair Programming:** Facilitates pair programming by allowing both programmers to see and edit code simultaneously, even if they are not in the same physical location.
+    
+- **Code Reviews:** Simplifies the code review process by allowing reviewers to make live edits and comments, reducing feedback loops and accelerating project timelines.
 
-### `npm run build`
+**Benefits:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Enhanced Collaboration:** Reduces barriers to teamwork, making it easier to solve problems collectively and implement changes instantly.
+    
+- **Increased Efficiency:** Streamlines the coding and testing process, leading to faster development cycles and reduced time-to-market.
+    
+- **Improved Communication:** Keeps team members in sync with real-time updates and notifications, minimizing misunderstandings and redundant work.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This collaborative IDE is a powerful tool for any development team looking to improve their workflow and achieve greater synergy in their coding efforts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## High level Overview of Codebase - 
+**Folder Structure**
+```
+Client Side Folder structure
 
-### `npm run eject`
+client
+├── components
+│   ├── Editor.js
+│   ├── EditorPage.js
+│   ├── Home.css
+│   ├── Home.js
+│   ├── LanguageSelector.js
+│   └── Socket.js
+├── env
+│   └── .gitignore
+├── index.css
+├── index.js
+├── package-json
+├── package-lock.json
+├── README.md
+|── reportWebVitals.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+Server side folder Structure(Deployed Separately)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+├── server
+│   ├── Actions.js
+│   ├── index.js
+│   ├── package-json
+│   └── package-lock.json
+├── setupTests.js
+├── .gitignore
+└── node_modules
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##### Packages used - 
+**Client-side ("client" folder):**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React & React Ecosystem:**
+    - `react`, `react-dom`: Core React library for building the user interface.
+    - `react-router-dom`: Enables routing for different views within the application.
+- **Data fetching & Networking:**
+    - `axios`: Makes HTTP requests to the server for data communication.
+- **UI Components:**
+    - `codemirror`: Enables code editing functionality within the IDE.
+    - `react-avatar`: Allows displaying user avatars.
+    - `react-hot-toast`: Used for displaying notifications to the user.
+- **Real-time Communication:**
+    - `socket.io-client`: Enables real-time communication between the client and server for collaborative editing.
+- **Other Utilities:**
+    - `uuid`: Generates unique identifiers for various purposes.
 
-## Learn More
+**Server-side ("server" folder):**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Node.js Ecosystem:**
+    - `express`: Web framework for building the server-side application.
+    - `fs`: Provides file system access functionalities.
+    - `https`: Enables secure communication between the server and client.
+    - `nodemon`: Development only tool that automatically restarts the server on code changes.
+- **Real-time Communication:**
+    - `socket.io`: Enables real-time communication between the server and multiple clients for collaborative editing.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage - 
+If you want to run Coderrr locally, follow these steps: 
+Check out the deployed link here - [New tab (coderrr.vercel.app)](https://coderrr.vercel.app/)
 
-### Code Splitting
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/yashkumar2603/Coderrr.git
+   cd Coderrr
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm start
+   ```
